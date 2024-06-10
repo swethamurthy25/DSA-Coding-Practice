@@ -35,14 +35,14 @@ Solution:
    since it is not possible to perform the required operation on the array.
 2. Next, the code initializes two variables i and j. The i variable is used to keep track of the number of operations performed, and the j variable is used to track 
    the position of the zero elements in the array.
-
+```python
 class Solution:
     def arrayOperations(self, n : int, arr : List[int]) -> int:
         #Edge case
         if 0 not in arr:return -1
         i = 0
         j = 0   
-        
+ ```       
 3. Use while loop for iteration and check if the j value is less than the len(arr), and if the element is equal to 0 , then in that case increment the j count by 1
 while j < len(arr):
             if arr[j] == 0:
@@ -52,6 +52,7 @@ while j < len(arr):
 5. Return the non-zero element value i as a final result.
 
 Code:
+```python
 class Solution:
     def arrayOperations(self, n : int, arr : List[int]) -> int:
         #Edge case
@@ -66,7 +67,8 @@ class Solution:
                 i += 1
                 while j < len(arr) and arr[j] != 0:
                     j += 1
-        return i
+        return I
+```
  ______________________________________________________________________________________________________________
 
 
